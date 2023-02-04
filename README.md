@@ -1,4 +1,7 @@
 # streaming-04-multiple-consumers
+### Tanya Fagaly
+### February 4, 2023
+ https://github.com/RealNumberI/streaming-04-multiple-consumers.git
 
 > Use RabbitMQ to distribute tasks to multiple workers
 
@@ -7,10 +10,10 @@ One process will create task messages. Multiple worker processes will share the 
 
 ## Before You Begin
 
-1. Fork this starter repo into your GitHub.
-1. Clone your repo down to your machine.
-1. View / Command Palette - then Python: Select Interpreter
-1. Select your conda environment. 
+1. Fork this starter repo into your GitHub. **DONE**
+1. Clone your repo down to your machine. **DONE**
+1. View / Command Palette - then Python: Select Interpreter **DONE**
+1. Select your conda environment. **DONE - I discovered I need to make sure my python version matches what I currently have to work. **
 
 ## Read
 
@@ -33,7 +36,7 @@ Explore the RabbitMQ website.
 
 1. Run listening_worker.py
 
-Will it terminate on its own? How do you know? 
+Will it terminate on its own? How do you know? **DONE  Yes, the first listener does.  It has a command line when completed**
 
 ## Ready for Work
 
@@ -58,3 +61,6 @@ Which worker gets which tasks?
 ## Screenshot
 
 See a running example with at least 3 concurrent process windows here:
+NOTE: In the listeners, in the first run of the emitter, I didn't start the listeners simultaneously. It was intersting to see where the second listener picked up as it started running. In the the second run, they were both already running.  
+
+![Multiple terminals]( Screenshot_M0d4_HW.png )
