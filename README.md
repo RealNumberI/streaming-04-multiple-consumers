@@ -4,6 +4,11 @@
  https://github.com/RealNumberI/streaming-04-multiple-consumers.git
 
 > Use RabbitMQ to distribute tasks to multiple workers
+> Clone this repo to your machine.  
+> Open three anaconda terminals and direct them to the folder of the repo you just cloned to your computer (cd name_of_folder_here).
+> In one window, run: python v3_emitter_of_tasks.py
+> In the other two windows, run : python v3_listening_worker.py
+> See what tasks end up in which of the listener windows.
 
 One process will create task messages. Multiple worker processes will share the work. 
 
